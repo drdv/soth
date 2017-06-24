@@ -46,6 +46,12 @@ namespace soth
     void setDamping( const double & d );
     double getMaxDamping() const;
 
+    // drdv: I added this function
+    VectorXd & get_x()
+    {
+        return uNext;
+    }
+
     //sizes
     Index sizeA() const;
     int rank() const;
